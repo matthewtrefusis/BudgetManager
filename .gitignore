@@ -12,6 +12,13 @@ bld/
 [Oo]bj/
 [Ll]og/
 
+# Distribution folder and large binaries
+BudgetManager-Distribution/*.exe
+*.exe
+!run.exe
+# Exclude large files over 50MB
+*.[eE][xX][eE]
+
 # Visual Studio 2015/2017 cache/options directory
 .vs/
 

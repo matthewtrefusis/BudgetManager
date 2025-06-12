@@ -98,3 +98,38 @@ Feel free to submit issues, feature requests, or pull requests to improve the ap
 ## License
 
 This project is open source and available under the MIT License.
+
+## Building the Application
+
+The application's executable is not included in the repository due to GitHub's file size limitations. You can build it yourself using the following steps:
+
+### Prerequisites
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+
+### Steps to Build a Self-Contained Executable
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/matthewtrefusis/BudgetManager.git
+   cd BudgetManager
+   ```
+
+2. Build the self-contained executable:
+   ```
+   dotnet publish -r win-x64 -c Release --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true
+   ```
+
+3. The executable will be available at:
+   ```
+   bin\Release\net8.0-windows\win-x64\publish\BudgetManager.exe
+   ```
+
+4. Copy it to your desired location and run it directly.
+
+### Alternative: Run from Source
+
+If you prefer not to build the executable, you can run the application directly from source:
+
+```
+dotnet run
+```
