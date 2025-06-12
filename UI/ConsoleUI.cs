@@ -7,11 +7,15 @@ namespace BudgetManager.UI
     {
         private readonly IBudgetService _budgetService;
         private readonly ReportService _reportService;
+        private User? _currentUser;
 
-        public ConsoleUI(IBudgetService budgetService, ReportService reportService)
+        public ConsoleUI(IBudgetService budgetService, ReportService reportService, User? currentUser = null)
         {
             _budgetService = budgetService;
             _reportService = reportService;
+            _currentUser = currentUser;
+            if (_currentUser != null && _budgetService is BudgetService bs)
+                bs.SetCurrentUser(_currentUser);
         }
 
         public async Task RunAsync()
@@ -872,13 +876,13 @@ namespace BudgetManager.UI
                     }
                     startDate = start;
                     endDate = end;
-                    break;
-                default:
-                    Console.WriteLine("❌ Invalid option.");
-                    return;
-            }
+                    break;            default:
+                Console.WriteLine("❌ Invalid option.");
+                return;
+        }
 
-            await _reportService.GenerateTransactionReportAsync(startDate, endDate);
+        var report = await _reportService.GenerateTransactionReportAsync(startDate, endDate);
+        Console.WriteLine(report);
         }
 
         private async Task ShowDashboardAsync()

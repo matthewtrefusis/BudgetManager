@@ -1,4 +1,5 @@
 using BudgetManager.Models;
+using BudgetManager.Services;
 
 namespace BudgetManager.Services
 {
@@ -32,13 +33,19 @@ namespace BudgetManager.Services
         private List<Transaction> _transactions;
         private List<Budget> _budgets;
         private List<FinancialGoal> _goals;
+        private User? _currentUser;
 
-        public BudgetService(IDataService dataService)
+        public BudgetService(IDataService dataService, User? currentUser = null)
         {
             _dataService = dataService;
-            _transactions = new List<Transaction>();
-            _budgets = new List<Budget>();
-            _goals = new List<FinancialGoal>();
+            _currentUser = currentUser;
+        }
+
+        public void SetCurrentUser(User user)
+        {
+            _currentUser = user;
+            if (_dataService is JsonDataService jsonDataService)
+                jsonDataService.SetCurrentUser(user);
         }
 
         public async Task InitializeAsync()

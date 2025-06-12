@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Fb92Z0L8x2s=",
+  "dgSpecHash": "mSkRh6d3ioY=",
   "success": true,
   "projectFilePath": "C:\\Code\\BudgetManager\\BudgetManager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Matth\\.nuget\\packages\\consoletables\\2.6.1\\consoletables.2.6.1.nupkg.sha512",
+    "C:\\Users\\Matth\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\Matth\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512",
     "C:\\Users\\Matth\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
