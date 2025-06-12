@@ -16,8 +16,14 @@ bld/
 BudgetManager-Distribution/*.exe
 *.exe
 !run.exe
+!run.bat
 # Exclude large files over 50MB
 *.[eE][xX][eE]
+
+# Explicitly ignore large binaries that caused issues
+bin/Release/net8.0-windows/win-x64/BudgetManager.exe
+bin/Debug/net8.0/BudgetManager.exe
+bin/Debug/net8.0-windows/BudgetManager.exe
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
