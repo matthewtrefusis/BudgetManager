@@ -5,6 +5,12 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject>BudgetManager.Program</StartupObject>
+    <ApplicationIcon>app-icon.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Authors>BudgetManager Team</Authors>
+    <Company>BudgetManager</Company>
+    <Product>BudgetManager</Product>
+    <Description>Personal Finance Management Tool</Description>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
