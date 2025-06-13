@@ -1,11 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+<Project Sdk="Microsoft.NET.Sdk">  <PropertyGroup>    <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject>BudgetManager.Program</StartupObject>
-    <ApplicationIcon>app-icon.ico</ApplicationIcon>
     <Version>1.0.0</Version>
     <Authors>BudgetManager Team</Authors>
     <Company>BudgetManager</Company>
