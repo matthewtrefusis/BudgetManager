@@ -1,0 +1,17 @@
+[33mcommit 63a7f5ab013da650161f7dfa3536e8808588ac1b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Matthew Trefusis <MatthewTrefusis@sky.com>
+Date:   Fri Jun 13 08:17:14 2025 +0100
+
+    Removed bugged icon
+
+[33mcommit 594e4ff635b4aebc5f090fef7e1bb934431f25cb[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: MatthewTrefusis <matthewtrefusis@users.noreply.github.com>
+Date:   Thu Jun 12 22:25:28 2025 +0100
+
+    Add git guidlines
+
+[33mcommit 19c1f232852af47982d00b3004c0553625071b6b[m
+Author: MatthewTrefusis <matthewtrefusis@users.noreply.github.com>
+Date:   Thu Jun 12 22:25:13 2025 +0100
+
+    Add guidelines for handling large files in Git
