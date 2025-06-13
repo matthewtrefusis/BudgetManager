@@ -1,17 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "riuA0IKcpdA=",
+  "dgSpecHash": "kx/xTSExS5k=",
   "success": true,
   "projectFilePath": "C:\\Code\\Apps\\BudgetManager\\BudgetManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matth\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
-    "C:\\Users\\matth\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.8\\microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512",
-    "C:\\Users\\matth\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\matth\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.8\\microsoft.netcore.app.runtime.win-x64.8.0.8.nupkg.sha512",
-    "C:\\Users\\matth\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.8\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.8.nupkg.sha512",
-    "C:\\Users\\matth\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.8\\microsoft.aspnetcore.app.runtime.win-x64.8.0.8.nupkg.sha512",
-    "C:\\Users\\matth\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.8\\microsoft.netcore.app.crossgen2.win-x64.8.0.8.nupkg.sha512"
+    "C:\\Users\\matth\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
