@@ -28,11 +28,10 @@ namespace BudgetManager.Services
     }
 
     public class BudgetService : IBudgetService
-    {
-        private readonly IDataService _dataService;
-        private List<Transaction> _transactions;
-        private List<Budget> _budgets;
-        private List<FinancialGoal> _goals;
+    {        private readonly IDataService _dataService;
+        private List<Transaction> _transactions = new List<Transaction>();
+        private List<Budget> _budgets = new List<Budget>();
+        private List<FinancialGoal> _goals = new List<FinancialGoal>();
         private User? _currentUser;
 
         public BudgetService(IDataService dataService, User? currentUser = null)

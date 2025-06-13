@@ -7,13 +7,12 @@ using System.Windows.Forms;
 namespace BudgetManager.UI
 {
     public class LoginForm : Form
-    {
-        private TextBox usernameTextBox;
-        private TextBox passwordTextBox;
-        private Button loginButton;
-        private Button registerButton;
-        private Label titleLabel;
-        private Label statusLabel;
+    {        private TextBox usernameTextBox = null!;
+        private TextBox passwordTextBox = null!;
+        private Button loginButton = null!;
+        private Button registerButton = null!;
+        private Label titleLabel = null!;
+        private Label statusLabel = null!;
         private UserService _userService;
         private User? _currentUser = null;
 

@@ -6,12 +6,11 @@ namespace BudgetManager.UI
     public partial class DashboardControl : UserControl
     {
         private readonly IBudgetService _budgetService;
-        
-        // UI Components
-        private Panel summaryPanel;
-        private Panel budgetPanel;
-        private Panel goalsPanel;
-        private Panel transactionsPanel;
+          // UI Components
+        private Panel summaryPanel = null!;
+        private Panel budgetPanel = null!;
+        private Panel goalsPanel = null!;
+        private Panel transactionsPanel = null!;
 
         public DashboardControl(IBudgetService budgetService)
         {

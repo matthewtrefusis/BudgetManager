@@ -1,4 +1,4 @@
-# BudgetManager
+﻿# BudgetManager
 
 ## Installation
 1. Extract all files to a folder of your choice

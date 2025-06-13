@@ -1,4 +1,6 @@
-<Project Sdk="Microsoft.NET.Sdk">  <PropertyGroup>    <OutputType>WinExe</OutputType>
+<Project Sdk="Microsoft.NET.Sdk">  
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -9,7 +11,18 @@
     <Company>BudgetManager</Company>
     <Product>BudgetManager</Product>
     <Description>Personal Finance Management Tool</Description>
+    
+    <!-- Optimization settings for Release build -->
+    <DebugType Condition="'$(Configuration)' == 'Release'">none</DebugType>
+    <DebugSymbols Condition="'$(Configuration)' == 'Release'">false</DebugSymbols>
+    <Optimize Condition="'$(Configuration)' == 'Release'">true</Optimize>
+    <PublishReadyToRun Condition="'$(Configuration)' == 'Release'">true</PublishReadyToRun>
+    <PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
+    <SelfContained Condition="'$(Configuration)' == 'Release'">true</SelfContained>
+    <!-- Trimming disabled as it's not compatible with Windows Forms -->
+    <PublishTrimmed>false</PublishTrimmed>
   </PropertyGroup>
+  
   <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

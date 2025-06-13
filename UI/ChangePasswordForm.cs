@@ -9,15 +9,14 @@ using System.Threading.Tasks;
 namespace BudgetManager.UI
 {
     public class ChangePasswordForm : Form
-    {
-        private TextBox currentPasswordBox;
-        private TextBox newPasswordBox;
-        private TextBox confirmPasswordBox;
-        private Button changeButton;
-        private Button cancelButton;
-        private Label statusLabel;
-        private Label passwordStrengthLabel;
-        private ProgressBar passwordStrengthBar;
+    {        private TextBox currentPasswordBox = null!;
+        private TextBox newPasswordBox = null!;
+        private TextBox confirmPasswordBox = null!;
+        private Button changeButton = null!;
+        private Button cancelButton = null!;
+        private Label statusLabel = null!;
+        private Label passwordStrengthLabel = null!;
+        private ProgressBar passwordStrengthBar = null!;
         
         private readonly UserService _userService;
         private readonly User _currentUser;

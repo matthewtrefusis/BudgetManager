@@ -45,8 +45,7 @@ namespace BudgetManager.Services
             
             await AppendToLogAsync(securityEvent);
         }
-        
-        private async Task AppendToLogAsync(SecurityEvent securityEvent)
+          private Task AppendToLogAsync(SecurityEvent securityEvent)
         {
             try
             {
@@ -67,6 +66,8 @@ namespace BudgetManager.Services
                 // Log to the application's debug log, but don't crash the app
                 System.Diagnostics.Debug.WriteLine($"Failed to log security event: {ex.Message}");
             }
+            
+            return Task.CompletedTask;
         }
         
         public async Task<List<SecurityEvent>> GetRecentEventsAsync(int count = 100)

@@ -50,32 +50,14 @@ namespace BudgetManager
                 
                 // Start session tracking
                 sessionManager.StartSession(currentUser);
-                
-                var dataService = new JsonDataService(currentUser);
+                  var dataService = new JsonDataService(currentUser);
                 var budgetService = new BudgetService(dataService, currentUser);
                 var reportService = new ReportService(budgetService);
                 
                 // Initialize budget service with data
                 await budgetService.InitializeAsync();
 
-                // Check if we need to create sample data
-                var transactions = await budgetService.GetAllTransactionsAsync();
-                if (!transactions.Any())
-                {
-                    var result = MessageBox.Show(
-                        "No data found. Would you like to create sample data to explore the application?",
-                        "Welcome to Budget Manager",
-                        MessageBoxButtons.YesNo,
-                        MessageBoxIcon.Question);
-
-                    if (result == DialogResult.Yes)
-                    {
-                        await BudgetManager.CreateSampleData.GenerateSampleDataAsync();
-                        await budgetService.InitializeAsync(); // Reload data
-                        MessageBox.Show("Sample data created successfully! You can now explore all features of the Budget Manager.", 
-                                      "Sample Data Created", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }                // Handle session expiration
+                // Handle session expiration
                 sessionManager.SessionExpired += (sender, e) => 
                 {
                     // Use the thread-safe way to update UI from a different thread

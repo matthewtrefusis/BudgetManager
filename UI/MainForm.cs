@@ -9,21 +9,20 @@ namespace BudgetManager.UI
     {        private readonly IBudgetService _budgetService;
         private readonly ReportService _reportService;
         private readonly BudgetManager.Services.SessionManager? _sessionManager;
-        
-        // UI Components
-        private TableLayoutPanel mainLayout;
-        private Panel headerPanel;
-        private Panel contentPanel;
-        private Panel sidebarPanel;
-        private Label titleLabel;
+          // UI Components
+        private TableLayoutPanel mainLayout = null!;
+        private Panel headerPanel = null!;
+        private Panel contentPanel = null!;
+        private Panel sidebarPanel = null!;
+        private Label titleLabel = null!;
         
         // Navigation buttons
-        private Button transactionsBtn;
-        private Button budgetsBtn;
-        private Button goalsBtn;
-        private Button reportsBtn;
-        private Button dashboardBtn;
-        private Button exitBtn;
+        private Button transactionsBtn = null!;
+        private Button budgetsBtn = null!;
+        private Button goalsBtn = null!;
+        private Button reportsBtn = null!;
+        private Button dashboardBtn = null!;
+        private Button exitBtn = null!;
         
         // Current active control
         private UserControl? currentControl;        public MainForm(IBudgetService budgetService, ReportService reportService, User? currentUser = null, BudgetManager.Services.SessionManager? sessionManager = null)

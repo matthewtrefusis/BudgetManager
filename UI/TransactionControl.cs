@@ -4,10 +4,9 @@ using BudgetManager.Models;
 namespace BudgetManager.UI
 {
     public partial class TransactionControl : UserControl
-    {
-        private readonly IBudgetService _budgetService;
-        private DataGridView transactionsGrid;
-        private Button addBtn, editBtn, deleteBtn, refreshBtn;
+    {        private readonly IBudgetService _budgetService;
+        private DataGridView transactionsGrid = null!;
+        private Button addBtn = null!, editBtn = null!, deleteBtn = null!, refreshBtn = null!;
 
         public TransactionControl(IBudgetService budgetService)
         {
