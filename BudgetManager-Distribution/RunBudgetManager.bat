@@ -1,0 +1,3 @@
+@echo off
+echo Starting BudgetManager...
+start BudgetManager.exe
